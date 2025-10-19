@@ -1,0 +1,13 @@
+name: first-workflow
+on: push
+jobs:
+  lint-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: lint
+        run: echo "this is lint running"
+      - name: test
+        run: echo "this is test running"
+      - name: build
+        run: echo "this is build running"
+      
